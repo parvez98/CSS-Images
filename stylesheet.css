@@ -1,0 +1,292 @@
+body{
+			background: #f92c63;
+		}
+		.box{
+			position: relative;
+			margin: auto;
+			display: block;
+			margin-top: 8%;
+			width: 600px;
+			height: 420px;
+			background: none;
+		}
+		.head{
+			position: absolute;
+			border-radius: 50%;
+			background: #2b8ff9;
+			width: 50%;
+			height: 67%;
+			top: 14%;
+			left: 25%;
+			border: 2px solid black;
+		}
+		.inner-head{
+			position: absolute;
+			border-radius: 50%;
+			width: 80%;
+			height: 85%;
+			background: white;
+			top: 15%;
+			left: 10%;
+			border: 1px solid black;
+
+		}
+		.left-eye{
+			position: absolute;
+			border-radius: 50%;
+			background: white;
+			width: 18%;
+			height: 25%;
+			border: 1px solid black;
+			top: 3%;
+			left: 30%;
+		}
+		.right-eye{
+			position: absolute;
+			border-radius: 50%;
+			background: white;
+			width: 18%;
+			height: 25%;
+			border: 1px solid black;
+			top: 3%;
+			left: 48.5%;
+		}
+		.left-black-pupil{
+			position: absolute;
+			border-radius: 50%;
+			background: black;
+			width: 30%;
+			height: 30%;
+			top: 53%;
+			left: 58%;
+		}
+		.right-black-pupil{
+			position: absolute;
+			border-radius: 50%;
+			background: black;
+			width: 30%;
+			height: 30%;
+			top: 53%;
+			left: 10%;
+		}
+		.white-pupil{
+			position: absolute;
+			border-radius: 50%;
+			background: white;
+			width: 50%;
+			height: 55%;
+			top: 20%;
+			left: 25%;
+		}
+		.nose{
+			position: absolute;
+			border-radius: 50%;
+			background: #dd0817;
+			width: 12%;
+			height: 12%;
+			top: 24.5%;
+			left: 42.5%;
+			border: 1px solid black;
+			z-index: 4;
+		}
+		.white-nose-patch{
+			position: absolute;
+			border-radius: 50%;
+			background: white;
+			width: 30%;
+			height: 30%;
+			top: 20%;
+			left: 25%;
+		}
+		.inner-head-copy{
+			position: absolute;
+			border-radius: 20%;
+			width: 60%;
+			height: 35%;
+			background: white;
+			top: 30%;
+			left: 20%;
+			border-bottom: 2px solid black;
+		}
+		.mouth{
+			position: absolute;
+			border-radius: 50%;
+			background: #dd0817;
+			width: 60%;
+			height: 60%;
+			top: 25%;
+			left: 19%;
+			border: 1px solid black;
+		}
+		.tongue{
+			position: absolute;
+			border-radius: 50%;
+			background: #e23844;
+			width: 60%;
+			height: 30%;
+			top: 70%;
+			left: 20%;
+			border: 1px solid black;
+		}
+		.vertical-line{
+			border-left: 2px solid black;
+			height: 30%;
+			position: absolute;
+			top: 23%;
+			left: 47.5%;
+			z-index: 2;
+		}
+		.moustache1{
+			position: absolute;
+			background: black;
+			-moz-transform: rotate(-60deg);  
+     		-o-transform: rotate(-60deg);  
+			-webkit-transform: rotate(-60deg);  
+		    -ms-transform: rotate(-60deg);  
+     		transform: rotate(-60deg);  
+     		width: 1%;
+     		height: 93%;
+     		left: 15%;
+     		top: -20%;
+     		z-index: 2;
+		}
+		.moustache2{
+			position: absolute;
+			background: black;
+			-moz-transform: rotate(-75deg);  
+     		-o-transform: rotate(-75deg);  
+			-webkit-transform: rotate(-75deg);  
+		    -ms-transform: rotate(-75deg);  
+     		transform: rotate(-75deg);  
+     		width: 1%;
+     		height: 93%;
+     		left: 10%;
+     		top: 0%;
+     		z-index: 2;
+		}
+		.moustache3{
+			position: absolute;
+			background: black;
+			-moz-transform: rotate(-93deg);  
+     		-o-transform: rotate(-93deg);  
+			-webkit-transform: rotate(-93deg);  
+		    -ms-transform: rotate(-93deg);  
+     		transform: rotate(-93deg);  
+     		width: 1%;
+     		height: 93%;
+     		left: 10%;
+     		top: 25%;
+     		z-index: 2;
+		}
+		.moustache4{
+			position: absolute;
+			background: black;
+			-moz-transform: rotate(60deg);  
+     		-o-transform: rotate(60deg);  
+			-webkit-transform: rotate(60deg);  
+		    -ms-transform: rotate(60deg);  
+     		transform: rotate(60deg);  
+     		width: 1%;
+     		height: 98%;
+     		right: 15%;
+     		top: -25%;
+     		z-index: 2;
+		}
+		.moustache5{
+			position: absolute;
+			background: black;
+			-moz-transform: rotate(75deg);  
+     		-o-transform: rotate(75deg);  
+			-webkit-transform: rotate(75deg);  
+		    -ms-transform: rotate(75deg);  
+     		transform: rotate(75deg);  
+     		width: 1%;
+     		height: 98%;
+     		right: 10%;
+     		top: -3%;
+     		z-index: 2;
+		}
+		.moustache6{
+			position: absolute;
+			background: black;
+			-moz-transform: rotate(93deg);  
+     		-o-transform: rotate(93deg);  
+			-webkit-transform: rotate(93deg);  
+		    -ms-transform: rotate(93deg);  
+     		transform: rotate(93deg);  
+     		width: 1%;
+     		height: 98%;
+     		right: 10%;
+     		top: 23%;
+     		z-index: 2;
+		}
+		.left-cheekbone{
+			position: absolute;
+			border-radius: 50%;
+			border-left: 2.5px solid black; 
+			background: white;
+			width: 30%;
+			height: 40%;
+			z-index: 1;
+			top: 56%;
+			right: 73%;
+		}
+		.right-cheekbone{
+			position: absolute;
+			border-radius: 50%;
+			border-right: 2.5px solid black; 
+			background: white;
+			width: 30%;
+			height: 40%;
+			z-index: 1;
+			top: 56%;
+			left: 73%;
+		}
+		.bow{
+			position: absolute;
+			border-radius: 20%;
+			top: 91%;
+			left: 20%;
+			width: 60%;
+			height: 9%;
+			background: #e83030;
+			border: 1px solid black;
+			border-bottom: 3px solid black;
+		}
+		.bell{
+			position: absolute;
+			border-radius: 50%;
+			background: #ffd816;
+			width: 10%;
+			height: 10%;
+			border-top: 1px solid black;
+			border-bottom: 3px solid black;
+			top: 95%;
+			left: 45%;
+		}
+		.belt{
+			position: absolute;
+			width: 103%;
+			height: 10%;
+			background: #ffd816;
+			top: 25%;
+			right: -5%;
+			border: 1px solid black;
+		}
+		.hole{
+			position: absolute;
+			background: #b28501;
+			top: 48%;
+			left: 36%;
+			border-radius: 50%;
+			width: 25%;
+			height: 25%;
+			border: 1px solid black;
+		}
+		.vl{
+			border-left: 2px solid black;
+			height: 30%;
+			position: absolute;
+			top: 80%;
+			left: 49%;
+		}
