@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Message</title>
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+    		$(".square").mousedown(function(){
+    			$(".flap-up").fadeIn(500);
+    			$(".envelope").hide();
+    			$(".stamp").hide();
+    			$(".click").hide();
+    			var delay = setTimeout(function(){
+    				$(".paper").fadeIn("slow");	
+    			}, 1500);
+    		});
+		});
+	</script>
+	<style>
+		body{
+			background: #ab26ff;
+		}
+		.square{
+			position: absolute;
+			top: 45%;
+			background: #d8d0bc;
+			width: 30%;
+			height: 35%;
+			-webkit-animation-name: move;
+			-webkit-animation-duration: 2s;
+			animation-name: move;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+			z-index: 0;
+			box-shadow: 5px 7px black;
+		}
+		@keyframes move{
+			from{ left: 0%; }
+			to{left: 35%;}
+		}	
+		@-webkit-keyframes move{
+			from{ left: 0%; }
+			to{left: 30%;}
+		}
+  		.paper{
+  			position: absolute;
+  			left: 0.5%;
+  			bottom: 51%;
+  			width: 100%;
+  			height: 110%;
+  			background-color: #f9dc7a;
+ 			z-index: 1;
+ 			border: 1px solid #f9dc7a;
+ 			display: none;
+  		}
+  		.left-flap{
+  			background: #efe8d7;
+  			position: absolute;
+  			-webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+			clip-path: polygon(0 0, 0% 100%, 100% 100%);
+			width: 102%;
+			height: 100%;
+			z-index: 2;
+  		}
+  		.right-flap{
+  			background: #efe8d7;
+  			position: absolute;
+  			-webkit-clip-path: polygon(99% 0%, 99% 99%, 0% 99%);
+			clip-path: polygon(99% 0%, 99% 99%, 0% 99%);
+			width: 102%;
+			height: 100%;
+			z-index: 2;
+  		}
+  		.flap-up{
+  			background: #d8d0bc;
+  			-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+			clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+			position: absolute;
+			bottom: 100%;
+			width: 101.5%;
+			height: 70%;
+			display: none;
+			z-index: 0;
+  		}
+  		.leaf-left-border{
+  			position: absolute;
+  			background: black;
+  			bottom: 24%;
+  			left: 25%;
+  			width: 0.5%;
+  			height: 102%;
+  			transform: rotate(-63deg);
+  			z-index: 3;
+  		}
+  		.leaf-right-border{
+  			position: absolute;
+  			background: black;
+  			bottom: 24%;
+  			right: 24%;
+  			width: 0.5%;
+  			height: 102%;
+  			transform: rotate(63deg);
+  			z-index: 3;
+  		}
+  		.letter-image{
+  			width: 20%;
+  			height: 20%;
+  			position: absolute;
+  			top: 5%;
+  			left: 40%;
+  		}
+  		.hogwarts{
+  			position: absolute;
+  			left: 30%;
+  			top: 30%;
+  			text-align: center;
+  			font-size: 55%;
+  			font-family: 'Dancing Script', cursive;
+  		}
+  		.to{
+  			font-size: 55%;
+  			font-family: 'Dancing Script', cursive;
+  			position: absolute;
+  			top: 40%;
+  			left: 10%;
+  		}
+  		.address1{
+  			font-size: 55%;
+  			font-family: 'Dancing Script', cursive;
+  			position: absolute;
+  			top: 45%;
+  			left: 13%;
+  		}
+  		.address2{
+  			font-size: 55%;
+  			font-family: 'Dancing Script', cursive;
+  			position: absolute;
+  			top: 50%;
+  			left: 13%;
+  		}
+  		.address3{
+  			font-size: 55%;
+  			font-family: 'Dancing Script', cursive;
+  			position: absolute;
+  			top: 55%;
+  			left: 13%;
+  		}
+  		.receiver{
+  			font-size: 55%;
+  			font-family: 'Dancing Script', cursive;
+  			position: absolute;
+  			top: 68%;
+  			left: 10%;	
+  		}
+  		.para-one{
+  			font-size: 55%;
+  			font-family: 'Dancing Script', cursive;
+  			position: absolute;
+  			top: 73%;
+  			left: 10%;	
+  		}
+  		.para-two{
+  			font-size: 55%;
+  			font-family: 'Dancing Script', cursive;
+  			position: absolute;
+  			top: 88%;
+  			left: 10%;	
+  		}
+  		.envelope{
+  			position: absolute;
+  			top: 7%;
+  			left: 39%;
+  			width: 25%;
+  			height: 25%;
+  		}
+  		.stamp{
+  			position: absolute;
+  			top: 38%;
+  			left: 43%;
+  			border-radius: 50%;
+  			width: 15%;
+  			height: 25%;
+  			background: #bf2222;
+  			z-index: 3;
+  		}
+ 		.inner-circle{
+ 			position: absolute;
+ 			top: 5%;
+ 			left: 10%;
+ 			border-radius: 50%;
+ 			width: 68%;
+ 			height: 75%;
+ 			filter: opacity(100%);
+ 			border: 4px solid #990404;
+ 		}
+ 		.click{
+ 			position: absolute;
+ 			top: 30%;
+ 			left: 35%;
+ 			font-family: 'Gloria Hallelujah', cursive;
+ 			font-size: 50px;
+ 			color: #ffffff
+ 		}
+	</style>
+</head>
+<body>
+	<div class="click">Click the letter!</div>
+	<div class="square">
+		<img src="hogwarts.png" class="envelope">
+		<div class="paper">
+			<img src="hogwarts.png" class="letter-image">
+			<div class="hogwarts">Hogwarts School of Witchcraft and Wizardary</div>
+			<div class="to">To, Ms. Soha Parvez</div>
+			<div class="address1">The Back Bedroom</div>
+			<div class="address2">28, D.D.Puram</div>
+			<div class="address3">Bareilly, India.</div>
+			<div class="receiver">Dear Ms. Parvez,</div>
+			<div class="para-one">We are pleased to inform that you have been accepted to Hogwarts School of Witchcraft and Wizardary. Students shalls be reqiured to the report to the Chamber of Reception upon arrival. We await your owl no later than 31 July.</div>
+			<div class="para-two">Please make yout way to Kings Cross Station onto platform nine three-quaters where you will meet the Hogwarts Express. Term begins 1 September.</div>
+		</div>
+		<div class="flap-up"></div>
+		<div class="left-flap"></div>
+		<div class="right-flap"></div>
+		<div class="stamp">
+			<div class="inner-circle"></div>
+		</div>
+	</div>
+</body>
+</html>
